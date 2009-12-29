@@ -5,5 +5,6 @@ html {
 }
 body {
 	height: 320px;
+	margin: 0;
 	width: 480px;
 }

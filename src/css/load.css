@@ -1,10 +1,13 @@
 #loading {
 	font-size: 2em;
-	margin-top: 80px;
+	padding-top: 40px;
 	text-align: center;
+	width: 320px;
 }
 #add_to_home_screen {
 	color: #666;
 	font-size: 1em;
+	margin: 1.4em 80px;
 	text-align: center;
+	width: 160px;
 }
