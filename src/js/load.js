@@ -12,6 +12,7 @@ x$(window).load(function (e) {
 		}
 		else {
 			// We have an HTML 5 capable browser ready to play the game.
+			x$('#loading').remove();
 			return Tesseract.init();
 		}
 	}
