@@ -3,6 +3,12 @@
 	padding-top: 40px;
 	text-align: center;
 }
+#loading img {
+	left: 50%;
+	margin: -16px 0 0 -16px;
+	position: absolute;
+	top: 50%;
+}
 #add_to_home_screen {
 	color: #666;
 	font-size: 1em;
