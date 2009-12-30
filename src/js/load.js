@@ -1,18 +1,17 @@
 x$(window).load(function (e) {
-	// Is the user-agent an iPhone or iPod Touch?
-	if (navigator.appVersion.indexOf('iPhone OS ') < 0) {
-		x$('#loading').inner('Tesseract is for the iPhone or iPod Touch only');
+	// Does the browser support the canvas element?
+	if (!document.createElement('canvas').getContext) {
+		x$('#loading').inner("Sorry, but Tesseract isn't supported in your browser.");
 	}
 	else {
-		// Was the game launched from the home screen?
-		if (window.navigator.standalone == undefined || window.navigator.standalone == false) {
-			x$('#loading')
-				.inner('Add Tesseract to your home screen to play')
-				.after('<div id=add_to_home_screen>Click ‘+’ below and then ‘Add to Home Screen’</div>');
+		// If the user-agent an iPhone or iPod Touch the game needs to be run
+		// from the home screen to be played full-screen.
+		if (navigator.appVersion.indexOf('iPhone OS ') > 0 && !window.navigator.standalone) {
+			x$('#loading').inner('Add Tesseract to your home screen to play');
+			x$('body').bottom('<div id=add_to_home_screen>Click ‘+’ below and then ‘Add to Home Screen’</div>');
 		}
 		else {
-			// We have an iPhone or iPod Touch, and the game was launched from
-			// the home screen.  We're ready to rock.
+			// We have an HTML 5 capable browser ready to play the game.
 			return Tesseract.init();
 		}
 	}
