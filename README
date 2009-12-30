@@ -1,15 +1,9 @@
-Tesseract is an experiment in creating a game for the iPhone and iPod Touch using only HTML 5 and its APIs, Javascript, and CSS.
-
-
-Requirements
---------------
-
-Tesseract requires iPhone OS 2.1 or later.
+Tesseract is an experiment in creating a web-based game using only HTML 5 and its APIs, Javascript, and CSS.
 
 
 Licences
 ----------
 
-The hypercube image is taken from Wikimedia Commons and is used under the Creative Commons Attribution ShareAlike 3.0 licence.
+The hypercube image (src/img/app_icon.png) is taken from Wikimedia Commons and is used under the Creative Commons Attribution ShareAlike 3.0 licence.
 
 http://commons.wikimedia.org/wiki/File:Hypercube.svg
