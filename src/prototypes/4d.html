@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>4D test</title>
+<style>
+body { font-size: 200%; font-family: helvetica;}
+</style>
+</head>
+<body>
+<script src="4d.js"></script>
+<p>Test from firebug please :)</p>
+<script>
+var c = new Tesseract(true);
+
+function infoOn(room) {
+  console.log('inspecting "' + room + '" room');
+  c.rooms[room].doors.forEach(function (item, i) {
+    console.log('door ' + door2direction[i] + ' joinedto ' + (item.joinedto ? item.joinedto.name : '--nothing'));
+  });
+}
+
+infoOn('top');
+</script>
+</body>
+</html>
